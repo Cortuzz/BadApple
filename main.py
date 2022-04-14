@@ -9,7 +9,7 @@ PATH = 'BadApple'
 VIDEO_PATH = '{}.mp4'.format(PATH)
 AUDIO_PATH = '{}.mp3'.format(PATH)
 
-frame_size = 200
+frame_size = 230
 frame_time = 0.01
 
 
