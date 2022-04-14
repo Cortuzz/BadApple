@@ -2,6 +2,7 @@ import cv2
 from PIL import Image
 
 brightness_chars = ["Σ", "#", "S", "%", "?", "*", "+", ";", ":", ",", " "]
+# brightness_chars.reverse()
 chars = []
 
 

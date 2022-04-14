@@ -4,10 +4,12 @@ from pygame import mixer
 
 from converters import *
 
+PATH = 'BadApple'
 
-VIDEO_PATH = 'BadApple.mp4'
+VIDEO_PATH = '{}.mp4'.format(PATH)
+AUDIO_PATH = '{}.mp3'.format(PATH)
 
-frame_size = 100
+frame_size = 200
 frame_time = 0.01
 
 
@@ -32,5 +34,5 @@ def play_video(last_frame):
 
 if __name__ == '__main__':
     ASCII = get_ascii(VIDEO_PATH, frame_size)
-    play_audio("BadApple.mp3")
+    play_audio(AUDIO_PATH)
     play_video(ASCII)
