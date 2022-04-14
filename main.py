@@ -9,8 +9,17 @@ PATH = 'BadApple'
 VIDEO_PATH = '{}.mp4'.format(PATH)
 AUDIO_PATH = '{}.mp3'.format(PATH)
 
-frame_size = 230
+MODE = "2K"
 frame_time = 0.01
+
+
+def check_mode(mode):
+    if mode is "2K":
+        return 270
+    elif mode is "FHD":
+        return 200
+    else:
+        raise Exception("Bad mode")
 
 
 def play_audio(path):
@@ -33,6 +42,7 @@ def play_video(last_frame):
 
 
 if __name__ == '__main__':
+    frame_size = check_mode(MODE)
     ASCII = get_ascii(VIDEO_PATH, frame_size)
     play_audio(AUDIO_PATH)
     play_video(ASCII)
