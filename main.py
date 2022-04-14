@@ -15,7 +15,7 @@ frame_time = 0.01
 
 def check_mode(mode):
     if mode is "2K":
-        return 270
+        return 212
     elif mode is "FHD":
         return 200
     else:
